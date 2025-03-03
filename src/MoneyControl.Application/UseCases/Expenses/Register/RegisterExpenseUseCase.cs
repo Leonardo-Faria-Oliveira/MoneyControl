@@ -32,7 +32,7 @@ namespace MoneyControl.Application.UseCases.Expenses.Register
            await _repository.Add(entity);
            await _unityOfWork.Commit();
 
-            return _mapper.Map<ResponseRegisteredExpenseJson>(entity);
+           return _mapper.Map<ResponseRegisteredExpenseJson>(entity);
 
         }
 

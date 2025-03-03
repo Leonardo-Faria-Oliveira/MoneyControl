@@ -17,13 +17,18 @@ namespace MoneyControl.Application.AutoMapper
         private void RequestToEntity()
         {
             CreateMap<RequestExpenseJson, Expense> ();
+
+            CreateMap<RequestRegisterUserJson, User>().ForMember(entity => entity.Password, config => config.Ignore());
         }
+
 
         private void EntityToResponse()
         {
             CreateMap<Expense, ResponseRegisteredExpenseJson>();
             CreateMap<Expense, ResponseShortExpenseJson>();
             CreateMap<Expense, ResponseExpenseJson>();
+
+            CreateMap<User, ResponseRegisteredUserJson>();
 
         }
 

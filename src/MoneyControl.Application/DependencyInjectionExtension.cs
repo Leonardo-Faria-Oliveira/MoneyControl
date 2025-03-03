@@ -6,6 +6,8 @@ using MoneyControl.Application.UseCases.Expenses.GetAll;
 using MoneyControl.Application.UseCases.Expenses.Register;
 using MoneyControl.Application.UseCases.Expenses.Update;
 using MoneyControl.Application.UseCases.Expenses.Filter;
+using MoneyControl.Application.UseCases.Users.Register;
+using MoneyControl.Application.UseCases.Users.Login;
 
 namespace MoneyControl.Application
 {
@@ -28,12 +30,18 @@ namespace MoneyControl.Application
 
         private static void AddUseCases(IServiceCollection services)
         {
+
+            //Expenses
             services.AddScoped<IRegisterExpenseUseCase, RegisterExpenseUseCase>();
             services.AddScoped<IGetAllExpensesUseCase, GetAllExpensesUseCase>();
             services.AddScoped<IGetExpenseByIdUseCase, GetExpenseByIdUseCase>();
             services.AddScoped<IDeleteExpenseByIdUseCase, DeleteExpenseByIdUseCase>();
             services.AddScoped<IUpdateExpenseByIdUseCase, UpdateExpenseByIdUseCase>();
             services.AddScoped<IFilterByMonthUseCase, FilterByMonthUseCase>();
+
+            //Users
+            services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+            services.AddScoped<ILoginUseCase, LoginUseCase>();
 
 
         }
