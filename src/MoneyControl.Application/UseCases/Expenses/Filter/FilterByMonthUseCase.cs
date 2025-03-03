@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MoneyControl.Communication.Responses;
-using MoneyControl.Domain.Repository.Expenses;
+using MoneyControl.Domain.Repositories.Expenses;
 
 namespace MoneyControl.Application.UseCases.Expenses.Filter
 {

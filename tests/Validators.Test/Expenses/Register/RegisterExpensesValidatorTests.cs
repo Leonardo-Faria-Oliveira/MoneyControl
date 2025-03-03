@@ -1,8 +1,6 @@
 using CommonTestUtilities.Requests;
 using MoneyControl.Application.UseCases.Expenses;
-using MoneyControl.Application.UseCases.Expenses.Register;
 using MoneyControl.Communication.Enums;
-using MoneyControl.Communication.Requests;
 using MoneyControl.Exception;
 
 namespace Validators.Test.Expenses.Register;

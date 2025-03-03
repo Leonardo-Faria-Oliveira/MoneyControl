@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MoneyControl.Domain.Repository.Users
+namespace MoneyControl.Domain.Repositories.Users
 {
     public interface IUsersReadOnlyRepository
     {
