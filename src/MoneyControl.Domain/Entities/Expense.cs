@@ -17,5 +17,10 @@ namespace MoneyControl.Domain.Entities
 
         public PaymentType Type { get; set; }
 
+
+        public long UserId { get; set; }
+
+        public User User { get; set; } = default!;
+
     }
 }
