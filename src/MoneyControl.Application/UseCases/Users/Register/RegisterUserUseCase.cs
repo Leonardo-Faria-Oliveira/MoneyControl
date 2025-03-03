@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using MoneyControl.Communication.Requests;
 using MoneyControl.Communication.Responses;
-using MoneyControl.Domain.Repository.Expenses;
-using MoneyControl.Domain.Repository;
-using MoneyControl.Domain.Repository.Users;
+using MoneyControl.Domain.Repositories.Expenses;
 using MoneyControl.Domain.Entities;
 using MoneyControl.Application.UseCases.Expenses;
 using MoneyControl.Exception.ExceptionBase;
@@ -11,6 +9,8 @@ using MoneyControl.Domain.Security.Criptography;
 using MoneyControl.Exception;
 using FluentValidation.Results;
 using MoneyControl.Domain.Security.Tokens;
+using MoneyControl.Domain.Repositories.Users;
+using MoneyControl.Domain.Repositories;
 
 namespace MoneyControl.Application.UseCases.Users.Register
 {

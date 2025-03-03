@@ -1,4 +1,4 @@
-﻿namespace MoneyControl.Domain.Repository
+﻿namespace MoneyControl.Domain.Repositories
 {
     public interface IUnityOfWork
     {

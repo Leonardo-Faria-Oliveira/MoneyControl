@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DF556037-429D-42AD-BC7E-6B7E7DCBED26}"
 EndProject
@@ -22,6 +22,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{CC86F900-65D2-46E8-AAE1-876BB6438101}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{FCB9D686-5C9E-4F49-8683-C6107628D514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{875883F3-6A44-4987-8B59-AD2BCAA792F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Test", "tests\WebApi.Test\WebApi.Test.csproj", "{B1B578D6-6251-435A-A343-B75D5D48110E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +65,14 @@ Global
 		{FCB9D686-5C9E-4F49-8683-C6107628D514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCB9D686-5C9E-4F49-8683-C6107628D514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCB9D686-5C9E-4F49-8683-C6107628D514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875883F3-6A44-4987-8B59-AD2BCAA792F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875883F3-6A44-4987-8B59-AD2BCAA792F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875883F3-6A44-4987-8B59-AD2BCAA792F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875883F3-6A44-4987-8B59-AD2BCAA792F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B578D6-6251-435A-A343-B75D5D48110E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B578D6-6251-435A-A343-B75D5D48110E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B578D6-6251-435A-A343-B75D5D48110E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B578D6-6251-435A-A343-B75D5D48110E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +86,7 @@ Global
 		{EFB76ED2-5278-433C-BF64-65A895575676} = {DF556037-429D-42AD-BC7E-6B7E7DCBED26}
 		{CC86F900-65D2-46E8-AAE1-876BB6438101} = {D39C1D09-9942-42DB-B0EE-239E1BFCF89D}
 		{FCB9D686-5C9E-4F49-8683-C6107628D514} = {D39C1D09-9942-42DB-B0EE-239E1BFCF89D}
+		{875883F3-6A44-4987-8B59-AD2BCAA792F5} = {D39C1D09-9942-42DB-B0EE-239E1BFCF89D}
+		{B1B578D6-6251-435A-A343-B75D5D48110E} = {D39C1D09-9942-42DB-B0EE-239E1BFCF89D}
 	EndGlobalSection
 EndGlobal

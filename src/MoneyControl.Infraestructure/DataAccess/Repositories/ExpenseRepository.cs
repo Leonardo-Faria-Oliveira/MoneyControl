@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MoneyControl.Domain.Entities;
-using MoneyControl.Domain.Repository.Expenses;
+using MoneyControl.Domain.Repositories.Expenses;
 
 namespace MoneyControl.Infraestructure.DataAccess.Repositories
 {
@@ -15,27 +15,22 @@ namespace MoneyControl.Infraestructure.DataAccess.Repositories
 
         public async Task Add(Expense expense) => await _context.Expenses.AddAsync(expense);
 
-        public async Task<bool> DeleteById(long id)
+        public async Task DeleteById(long id)
         {
 
             var expense = await _context.Expenses
-            .FirstOrDefaultAsync(expense => expense.Id == id);
-
-            if (expense is null)
-            {
-                return false;
-            }
+            .FirstAsync(expense => expense.Id == id);
 
             _context.Expenses.Remove(expense);
 
-            return true;
 
         }
 
-        public async Task<ICollection<Expense>> GetAll()
+        public async Task<ICollection<Expense>> GetAll(long userId)
         {
             return await _context.Expenses
             .AsNoTracking()
+            .Where(expense => expense.UserId == userId)
             .ToListAsync();
         }
 

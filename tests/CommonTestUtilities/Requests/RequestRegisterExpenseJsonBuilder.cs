@@ -7,11 +7,11 @@ namespace CommonTestUtilities.Requests
     public class RequestRegisterExpenseJsonBuilder
     {
 
-        public static RequestRegisterExpenseJson Build()
+        public static RequestExpenseJson Build()
         {
 
             var faker = new Faker();
-            return new RequestRegisterExpenseJson
+            return new RequestExpenseJson
             {
                 Title = faker.Commerce.ProductName(),
                 Amount = faker.Random.Decimal(min:1, max:1000),

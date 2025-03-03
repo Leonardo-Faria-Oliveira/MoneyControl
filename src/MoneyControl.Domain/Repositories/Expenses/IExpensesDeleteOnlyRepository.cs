@@ -1,11 +1,11 @@
 ﻿using MoneyControl.Domain.Entities;
 
-namespace MoneyControl.Domain.Repository.Expenses
+namespace MoneyControl.Domain.Repositories.Expenses
 {
     public interface IExpensesDeleteOnlyRepository
     {
 
-        public Task<bool> DeleteById(long id);
+        public Task DeleteById(long id);
 
     }
 }

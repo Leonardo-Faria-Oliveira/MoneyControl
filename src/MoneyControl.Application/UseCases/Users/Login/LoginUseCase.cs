@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using MoneyControl.Communication.Responses;
-using MoneyControl.Domain.Repository.Users;
-using MoneyControl.Domain.Repository;
 using MoneyControl.Domain.Security.Criptography;
 using MoneyControl.Domain.Security.Tokens;
 using MoneyControl.Exception.ExceptionBase;
 using MoneyControl.Communication.Requests;
+using MoneyControl.Domain.Repositories.Users;
+using MoneyControl.Domain.Repositories;
 
 namespace MoneyControl.Application.UseCases.Users.Login
 {

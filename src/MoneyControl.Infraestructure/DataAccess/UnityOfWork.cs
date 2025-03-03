@@ -1,4 +1,4 @@
-﻿using MoneyControl.Domain.Repository;
+﻿using MoneyControl.Domain.Repositories;
 
 namespace MoneyControl.Infraestructure.DataAccess
 {

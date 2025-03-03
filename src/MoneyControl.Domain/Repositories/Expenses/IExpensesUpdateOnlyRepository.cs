@@ -1,6 +1,6 @@
 ﻿using MoneyControl.Domain.Entities;
 
-namespace MoneyControl.Domain.Repository.Expenses
+namespace MoneyControl.Domain.Repositories.Expenses
 {
     public interface IExpensesUpdateOnlyRepository
     {

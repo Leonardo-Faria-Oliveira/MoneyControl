@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MoneyControl.Domain.Entities;
-using MoneyControl.Domain.Repository.Users;
+using MoneyControl.Domain.Repositories.Users;
 
 namespace MoneyControl.Infraestructure.DataAccess.Repositories
 {
